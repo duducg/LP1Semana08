@@ -5,8 +5,9 @@ using System.Threading.Tasks;
 
 namespace AnimalKingdom
 {
-    public class Bat : Animal, IMammal
+    public class Bat : Animal, IMammal, ICanFly
     {
+        public int NumberOfWings { get { return 2; } }
         public int NumberOfNipples 
         {
             get { return 4;}
